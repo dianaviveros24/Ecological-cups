@@ -1,0 +1,105 @@
+:root{
+    --bg-color: #0A4E46;
+    --primary-color: #F8D0DB;
+    --secundary-color: #4F817B;
+    --accent-color: #F4C2CF;
+
+    --primary-text-color: #4F817B;
+    --secundary-text-color: #FEEFF3;
+
+    --secundary-font: 'Raleway', sans-serif;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--bg-color);
+    background: linear-gradient(270deg, var(--bg-color) 46%, rgba(62,113,105,1) 100%);
+}
+
+.navbar{
+    width: 88%;
+    margin: 6px 0;
+    padding: 32px 0;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.1);
+}
+.o-nav-items{
+    width: 38%;
+    display: inline-block;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+    nav ul li{
+        display: inline-block;
+        margin: 0 24px;
+    }
+    nav ul li a{
+        font-weight: 400;
+        padding: 46px 0;
+        text-decoration: none;
+        color: var(--accent-color);
+        border-bottom: solid 2px transparent;
+
+        transition: all 0.5s;
+    }
+    nav ul li a:hover{
+        color: var(--accent-color);
+        border-bottom: solid 2px var(--accent-color);
+    }
+nav .o-nav-button{
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--primary-color);
+    border: solid 2px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s
+}
+nav .o-nav-button:hover{
+    cursor: pointer;
+    
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+section, .o-container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+    section, .o-main-container{
+        width: 94%;
+        display: flex;
+        justify-content: space-between;
+    }
+        .o-main-info-container{
+            margin: 2rem 0rem;
+        }
+        .o-main-info-container-title h1{
+            font-weight: 600;
+            font-size: 3.8em;
+            color: var(--accent-color);
+        }
+        .o-main-info-container-content, .o-main-info-container-content a{
+            font-weight: 300;
+            margin-top: 2rem;
+            font-size: 1rem;
+            color: var(--primary-color);
+        }
+        .o-main-info-container-content li{
+            margin-top: .5rem;
+        }
+.o-main-img img{
+    top: 6rem;
+    right: 1rem;
+    width: 43rem;
+    z-index: 2;
+    position: absolute;
+}
+
