@@ -16,6 +16,7 @@ body{
 }
 main{
     display: flex;
+    padding-bottom: 4rem;
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--bg-color);
@@ -129,3 +130,17 @@ section, .o-container{
         
         background-color:rgba(255, 221, 221, 0.1) ;
     }
+/*_________*/
+.o-main-features{
+    display: flex;
+    margin-left: 5rem;
+    background-color: var(--accent-color);
+}
+.o-features{
+    width: 14%;
+    display: flex;
+    padding: 3rem 0rem 2rem 0rem;
+    font-size: 12px;
+    align-items: center;
+    background-color: white;
+}
